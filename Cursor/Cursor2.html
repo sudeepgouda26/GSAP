@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html,body{
+        width: 100vw;
+        height: 100vh;
+       
+        
+    }
+    #main{
+        width: 100%;
+        height: 100%;
+        background-color: #111;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #cursor{
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        position: fixed;
+        border-radius: 50%;
+        pointer-events: none;
+        transform: translate(-50%,-50%);
+        font-size: 6px;
+        text-align: center;
+        z-index: 8;
+    }
+    #image img{
+        object-fit: cover;
+        
+    }
+    #image{
+        height: 40vh;
+        width: 60vw;
+        object-fit: cover;
+        position: relative;
+    }
+    #overlay{
+        position: absolute;
+       
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        z-index: 9;
+    }
+    </style>
+</head>
+<body>
+    <div id="cursor"></div>
+    <div id="main">
+
+   
+
+        <div id="image">
+            <div id="overlay"></div>
+            <img src="https://www.akamai.com/site/im-demo/perceptual-standard.jpg?imbypass=true" alt="" height="100%" width="100%"></div>
+    </div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js" integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="cursor2.js"></script>
+</body>
+</html>

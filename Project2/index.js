@@ -48,7 +48,7 @@ tl.from("#companies img ",{
     scrollTrigger:{
         trigger:"#companies",
         scroller:"body",
-        markers:true,
+      
         start:"top 80%",
         end:"top 70%",
         scrub:1,
@@ -58,5 +58,76 @@ tl.from("#companies img ",{
 
     stagger:0.3,
 })
+
+tl.from("#info > :nth-child(1) > h3 ,:nth-child(2) > p ",{
+    scrollTrigger:{
+        trigger:"#info",
+        scroller:"body",
+        
+        start:"top 80%",
+        end:"top 73%",
+        scrub:1,
+    },
+    opacity:0,
+    x:100,
+
+    stagger:0.3,
+})
+
+
+// tl.from("#info > :nth-child(2) > p ",{
+//     scrollTrigger:{
+//         trigger:"#info",
+//         scroller:"body",
+//         markers:true,
+//         start:"top 80%",
+//         end:"top 75%",
+//         scrub:1,
+//     },
+//     opacity:0,
+//     x:-100,
+
+//     stagger:0.3,
+// })
+
+var tl2 = gsap.timeline({
+    scrollTrigger:
+    {
+        trigger:"#container1,#container2",
+        scroller:"body",
+        start:"top 60%",
+        end:"top 40%",
+        markers:true,
+        scrub:2,
+    }
+
+})
+
+tl2.from(".box.left1",{
+    opacity:0,
+    x:-100,
+    duration:1,
+   
+},"animate1")
+tl2.from(".box.right1",{
+    opacity:0,
+    x:100,
+    duration:1,
+   
+},"animate1")
+
+tl2.from(".box.left2",{
+    opacity:0,
+    x:-100,
+    duration:1,
+   
+},"animate2")
+tl2.from(".box.right2",{
+    opacity:0,
+    x:100,
+    duration:1,
+   
+},"animate2")
+
    
  

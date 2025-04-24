@@ -97,7 +97,7 @@ var tl2 = gsap.timeline({
         scroller:"body",
         start:"top 60%",
         end:"top 40%",
-        markers:true,
+       
         scrub:2,
     }
 

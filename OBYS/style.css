@@ -1,77 +1,138 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html,body{
-  height: 100vh;
-  width: 100vw;  
-  color: white;
-    
-}
-#loader{
+
+html, body {
     height: 100vh;
     width: 100vw;
-    background-color:#151515;
+    color: white;
+}
+
+#loader {
+    height: 100vh;
+    width: 100vw;
+    background-color: #151515;
     position: fixed;
     z-index: 999;
-    font-family:"Plain Light" ;
+    font-family: "Plain Light";
+    padding: 10vw 12vw;
 }
-.line{
+
+.line {
     display: flex;
     justify-content: flex-start;
-   
     gap: 3vw;
-  
+    overflow: hidden;
 }
-#loader{
-    padding: 10vw  12vw ;
-}
-#loader h2{
-    font-size: 6vw;
 
- line-height: 1.14;
+#loader h2 {
+    font-size: 6vw;
+    line-height: 1.14;
     overflow: hidden;
     text-transform: uppercase;
-
-   
-  
 }
-#line-part1 h5{
+
+#line-part1 {
+    display: flex;
+    gap: 2vw;
+}
+
+#line-part1 h5 {
     width: 5vw;
     text-align: right;
 }
 
-.line>h3{
-    font-size: 5.5vw;
-    font-family: "Plain Light";
-  
-  
-}
-#line-part1{
-    display: flex;
-    gap: 2vw;
-   
-}
-#line-part1 h5,h6{
+#line-part1 h5, h6 {
     font-size: 3vw;
     font-family: "Silk Serif";
     font-weight: 400;
-   
-   
+}
+
+.line > h3 {
+    font-size: 5.5vw;
+    font-family: "Plain Light";
    
 }
-#page1{
-    height: 100vh;
-    width: 100vw;
-    background-color: #151515;
+.last #now{
+    animation-name: anim;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+   
 }
-#page2{
-    height: 100vh;
-    width: 100vw;
-    background-color: #151515;
+
+@keyframes anim{
+    0%{
+        font-family: "Plain Light";
+     
+        -webkit-text-stroke: 1px solid white;
+        font-weight: 600;
+        opacity: 1;
+    } 
+    20%{
+        font-family: "Plain Light";
+     
+        -webkit-text-stroke: 1px solid white;
+        font-weight: 600;
+        opacity: 0;
+    } 
+    
+    30%{
+        font-family: "Silk Serif";
+        color: aliceblue;
+      
+        -webkit-text-stroke: 1px solid rgb(255, 255, 255);
+        font-weight: 600;
+        opacity: 1;
+
+    }
+    
+    48%{
+        font-family: "Plain Light";
+     
+        -webkit-text-stroke: 1px solid white;
+        font-weight: 600; 
+        opacity: 0;
+
+    }
+    /* 50%{
+        font-family: "Silk Serif";
+        
+      
+        -webkit-text-stroke: 1px solid rgb(255, 255, 255);
+        font-weight: 600;
+        opacity: 1;
+
+    } */
+    75%{
+        font-family: "Plain Light";
+     
+        -webkit-text-stroke: 1px solid white;
+        font-weight: 600; 
+        opacity: 0;
+
+    }
+    98%{
+        font-family: "Silk Serif";
+        color: aliceblue;
+      
+        -webkit-text-stroke: 1px solid rgb(255, 255, 255);
+        font-weight: 600;
+        opacity: 1;
+
+    }
+    100%{
+        font-family: "Silk Serif";
+        color: aliceblue;
+      
+        -webkit-text-stroke: 1px solid rgb(255, 255, 255);
+        font-weight: 600;
+        opacity: 0;
+    }
 }
-#page3{
+
+#page1, #page2, #page3 {
     height: 100vh;
     width: 100vw;
     background-color: #151515;

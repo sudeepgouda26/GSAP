@@ -45,7 +45,7 @@ function loader(){
         }
     })
   
-    tl.from(".page1", {
+    tl.from("#page1", {
         y: 1900,
         duration: 1.5,
         delay: 0.5,

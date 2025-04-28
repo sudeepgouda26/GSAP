@@ -39,7 +39,7 @@ function loader(){
     tl.to("#loader",{
         opacity:0,
         duration:0.5,
-        delay:4,
+        delay:3.7,
         onComplete: function() {
             document.querySelector("#loader").style.display = "none";
         }
@@ -48,8 +48,15 @@ function loader(){
     tl.from("#page1", {
         y: 1900,
         duration: 1.5,
-        delay: 0.5,
+        
         opacity: 0,
     });
 }
 loader();
+document.addEventListener("mousemove", function(dets){
+gsap.to("#cursor",{
+    left: dets.x,
+    top: dets.y ,
+ 
+})
+})

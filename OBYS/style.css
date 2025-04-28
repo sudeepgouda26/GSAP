@@ -126,6 +126,18 @@ html, body {
 #main{
     background-color: #000000;
 }
+#cursor{
+    height: 2vw;
+    width: 2vw;
+    border: 1px solid rgba(255, 255, 255, 0.855);
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9999;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+
+}
 #nav :nth-child(2){
     display: flex;
     align-items: center;

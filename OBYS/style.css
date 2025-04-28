@@ -113,7 +113,7 @@ html, body {
 #page1, #page2, #page3 {
     
     width: 100vw;
-    background-color:#753939;
+    background-color:#151515;
 }
 #nav{
     display: flex;
@@ -136,4 +136,23 @@ html, body {
 #nav-part2{
     padding-right:7vw;
 }
+#nav-part2 h4{
+    font-size: 1vw;
+    font-family: "Plain Light";
+    font-weight: 500;
+}
+.hero{
+    
+    width: 75%;
+    margin-left: 28%;
+}
+.hero h1{
+    font-size: 7.7vw;
+    line-height: 0.9;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.hero:nth-child(2){
+   margin-top: 16vh;
 
+}

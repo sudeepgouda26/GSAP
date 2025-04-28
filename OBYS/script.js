@@ -39,19 +39,17 @@ function loader(){
     tl.to("#loader",{
         opacity:0,
         duration:0.5,
-        delay:4
+        delay:4,
+        onComplete: function() {
+            document.querySelector("#loader").style.display = "none";
+        }
     })
-    tl.to("#loader",{
-        display:"none",
-        duration:0.5,
-        
-    })
-    gsap.from("#page1",{
-        y:1200,
-        duration:1,
-        delay:0.5,
-        opacity:0,
-        ease:Power4
-    })
+  
+    tl.from(".page1", {
+        y: 1900,
+        duration: 1.5,
+        delay: 0.5,
+        opacity: 0,
+    });
 }
 loader();

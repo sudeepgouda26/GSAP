@@ -54,7 +54,7 @@ function loader(){
     tl.from("#nav",{
         opacity:0,
     })
-    tl.from("#page1 h1",{
+    tl.from("#page1 h1,h2",{
         y:130,
         stagger:0.25,
     })

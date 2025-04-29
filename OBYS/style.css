@@ -157,6 +157,8 @@ html, body {
     
     width: 75%;
     margin-left: 28%;
+    overflow: hidden;
+    height: fit-content;
 }
 .hero h1{
     font-size: 7.7vw;
@@ -165,6 +167,6 @@ html, body {
     text-transform: uppercase;
 }
 .hero:nth-child(2){
-   margin-top: 16vh;
+   margin-top: 15.5vh;
 
 }

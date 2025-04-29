@@ -51,6 +51,13 @@ function loader(){
         
         opacity: 0,
     });
+    tl.from("#nav",{
+        opacity:0,
+    })
+    tl.from("#page1 h1",{
+        y:130,
+        stagger:0.25,
+    })
 }
 loader();
 document.addEventListener("mousemove", function(dets){
@@ -60,3 +67,9 @@ gsap.to("#cursor",{
  
 })
 })
+
+Shery.makeMagnet("#nav-part2 h4", {
+    magnet :"#cursor",
+    ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+    duration: 1,
+  });

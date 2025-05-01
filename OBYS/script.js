@@ -74,3 +74,14 @@ Shery.makeMagnet("#nav-part2 h4", {
     ease: "cubic-bezier(0.23, 1, 0.320, 1)",
     duration: 1,
   });
+
+  let videoContainer = document.querySelector(".video-container");
+  console.log(videoContainer);
+  
+  videoContainer.addEventListener("mousemove", function(dets) {
+    gsap.to("#cursr", {
+          x:dets.x,
+          y:dets.y,
+          overFlow:"hidden",
+    })
+  })

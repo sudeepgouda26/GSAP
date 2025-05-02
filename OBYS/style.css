@@ -285,7 +285,7 @@ background-color: #FFA63D;
 }
 #page4-content>p{
     width: 53%;
-    font-size: 2.4vw;
+    font-size: 2.2vw;
     line-height: 1.3;
     padding-top: 2.5vw;
 }
@@ -323,3 +323,27 @@ background-color: #FFA63D;
     height: 100vh;
     background-color: #009523;
 }
+
+#blue-div
+{
+    width: 35vw;
+    background-color: #3F7DF4;
+    position: relative;
+    margin-top: -30vh;
+    margin-left: 23vw;
+    z-index: 99999999;
+}
+#blue-div-details{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    padding: 3.3vw 2vw;
+}
+#blue-div-details p{
+    width: 40%;
+
+ }
+ #blue-div-details h2{
+    font-weight: 500;
+
+ }

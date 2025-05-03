@@ -138,7 +138,7 @@ html, body {
     border: 1px solid rgba(255, 255, 255, 0.855);
     border-radius: 50%;
     position: fixed;
-    z-index: 9999;
+    z-index: 99999999999;
     pointer-events: none;
     transform: translate(-50%, -50%);
     mix-blend-mode: difference;
@@ -280,7 +280,7 @@ background-color: #FFA63D;
 
 }
 #page4-content #underLine{
-    height: 9vh;
+    height: 7vh;
     border-bottom: 1px solid rgb(214, 208, 208);
 }
 #page4-content>p{
@@ -320,8 +320,9 @@ background-color: #FFA63D;
 
 }
 #page5{
-    height: 100vh;
-    background-color: #009523;
+   min-height: 100vh;
+ 
+    position: relative;
 }
 
 #blue-div
@@ -337,13 +338,85 @@ background-color: #FFA63D;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid white;
-    padding: 3.3vw 2vw;
+    padding: 3.1vw 2vw;
 }
 #blue-div-details p{
-    width: 40%;
+    width: 44%;
 
  }
  #blue-div-details h2{
     font-weight: 500;
 
  }
+ #page5 #elem{
+  white-space: nowrap;
+    
+overflow-x: hidden;
+    position: relative;
+ }
+ #page5 #elem h1 {
+    width: 100%;
+    font-size: 6.5vw;
+    margin-right: 7vw;
+ 
+    text-transform: uppercase;
+    font-weight: 400;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    display: inline-block;
+    animation-name: scroll;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+ } 
+
+ @keyframes scroll {
+
+    
+    from {
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px));
+    }
+ }
+ #page5 #elem2{
+    white-space: nowrap;
+ 
+    
+     
+      position: relative;
+   }
+
+ #page5 #elem2 h1 {
+    width: 100%;
+    font-size: 6.5vw;
+    margin-right: -7vw;
+    overflow: hidden;
+    
+ 
+    text-transform: uppercase;
+    font-weight: 400;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    display: inline-block;
+    transform: translateX(calc(-100% - 20px));
+    animation-name: scroll;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+ } 
+ 
+
+
+ /* @keyframes Revscroll {
+
+    
+    from {
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(100% - 20px));
+    }
+ } */

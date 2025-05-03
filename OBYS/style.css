@@ -424,8 +424,31 @@ overflow-x: hidden;
     text-transform: uppercase;
 }
 #page6 .underLine{
+   
     height: 7vh;
     border-bottom: 1px solid #fff;
    
+    
+}
+.box1 h6{
+    font-size: 1.2vw;
+    font-family: none;
+    padding: 4vw 0 2vw 0;
+}
+#footer-elem{
+    padding: 2.8vw 0 2.8vw 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+   
+    
+    padding-right:15vw;
+}
+.box1 h5{
+    font-size: 1.5vw;
+    font-family: "Plain Light";
+    font-weight: 500;
+    line-height: 1.1;
     
 }

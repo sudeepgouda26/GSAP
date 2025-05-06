@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>obys</title>
     <link rel="shortcut icon" href="./favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
@@ -79,7 +80,8 @@
                     <h4>contacts</h4>
                 </div>
             </div>
-            <div class="hero" id="hero1">
+         
+            <div class="hero" id="hero1" >
                 <h1>Web design</h1>
             </div>
             <div class="hero" id="hero2">
@@ -94,11 +96,14 @@
             </div>
 
         </div>
-        <div id="page2">
+   
+        <div id="page2" data-scroll  data-scroll-speed="-2">
+            
             <div id="video-container" class="video-container">
                 <div id="cursr">
                     <i class="ri-play-circle-fill"></i>
                 </div>
+                
                 <img src="https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg" alt="">
                 <video id="video" autoplay muted loop playsinline>
                     <source src="https://obys.agency/wp-content/uploads/2024/12/Obys-Showreel-2024.mp4"
@@ -107,8 +112,8 @@
                 </video>
             </div>
         </div>
-        <div id="page3"></div>
-        <div id="page4">
+        <div id="page3" data-scroll  data-scroll-speed="-2"></div>
+        <div id="page4" data-scroll  data-scroll-speed="-3">
             <div id="page4-content">
                 <h1>ABOUT OBYS</h1>
                 <div id="underLine"></div>
@@ -153,7 +158,7 @@
 
                     and celebrate
                     together.</p>
-                <div id="page4-image">
+                <div id="page4-image" data-scroll  data-scroll-speed="-3">
                     <div id="page4-Bcimage" class="page4-bcimage"></div>
                     <div>
                         <p>We are happy to present our new website and updated version of Obys agency. As before we are open for new projects worldwide!
@@ -253,6 +258,7 @@
 
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"
         integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>

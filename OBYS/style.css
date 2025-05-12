@@ -307,6 +307,30 @@ background-color: #FFA63D;
     margin-left: 30vw;
 }
 
+#image-div-container{
+  
+    padding-left: 2vw;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+#image-div-container .image-div{
+    height: 62vh;
+    width: 23vw;
+    background-color: #299e42;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+#image-div-container .image-div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   object-position: center;
+}
+
 
 
 
@@ -325,7 +349,7 @@ background-color: #FFA63D;
     position: relative;
     width: 100vw;
    
-    padding-top: 37vh;
+    padding-top: 57vh;
 }
 #page4-content{
     width: 70vw;
@@ -532,4 +556,8 @@ overflow-x: hidden;
     font-weight: 500;
     line-height: 1.1;
     
+}
+
+._canvas_container{
+    z-index: 9999999999999999999999999999 !important;
 }

@@ -108,7 +108,7 @@ function loader(){
     tl.from("#page2 ",{
     
         opacity:0,
-    })
+    },"-=2.5")
 }
 loader();
 document.addEventListener("mousemove", function(dets){

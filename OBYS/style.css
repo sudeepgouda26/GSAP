@@ -346,6 +346,7 @@ background-color: #FFA63D;
     align-items: center;
     margin-top: 20vw;
     margin-left: 8vw;
+    position: relative;
 
 }
 .image-circle1 svg{
@@ -368,6 +369,40 @@ background-color: #FFA63D;
     height: 40%;
     rotate: -45deg;
 
+}
+.circle1-hover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    scale: 0;
+
+}
+.circle1-hover p{
+    width: 64%;
+ color: #000000;
+    font-size: 1vw;
+    font-family: "Plain Light";
+    font-weight: 500;
+    scale: 0;
+    
+   
+    
+}
+.image-circle1:hover .circle1-hover {
+    scale: 1;
+    transition: all 0.5s ease;
+}
+.image-circle1:hover p {
+    scale: 1;
+    transition: all 0.5s ease;
+    transition-delay: 0.4s;
 }
 
 

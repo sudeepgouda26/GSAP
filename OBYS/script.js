@@ -126,7 +126,27 @@ Shery.makeMagnet("#nav-part2 h4", {
   });
 
   let videoContainer = document.querySelector(".video-container");
-  console.log(videoContainer);
+ let video = document.querySelector("#video");
+ let flag  =0;
+ videoContainer.addEventListener("click", function(){
+    if(flag ==0){
+        video.play();
+       let cursor=  document.querySelector("#cursr");
+       cursor.innerHTML = ` <i class="ri-pause-line"></i>`;
+       flag=1;
+       cursor.style.scale=0.7;
+       video.style.opacity=1;
+    }else{
+         video.pause();
+       let cursor=  document.querySelector("#cursr");
+       cursor.innerHTML = `  <i class="ri-play-circle-fill"></i>`;
+       flag=0;
+       cursor.style.scale=1;
+       video.style.opacity=0;
+
+    }
+    
+ })
   
   videoContainer.addEventListener("mouseenter", function() {
   

@@ -245,6 +245,9 @@ html, body {
     height: 95%;
     object-fit: cover;
     overflow: hidden;
+    position: relative;
+    z-index: 99;
+    opacity: 0;
   
 }
 #page2 #video-container img{

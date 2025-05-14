@@ -128,12 +128,31 @@ Shery.makeMagnet("#nav-part2 h4", {
   let videoContainer = document.querySelector(".video-container");
   console.log(videoContainer);
   
-  videoContainer.addEventListener("mousemove", function(dets) {
-    gsap.to("#cursr", {
-          x:dets.x,
-          y:dets.y,
-          overFlow:"hidden",
+  videoContainer.addEventListener("mouseenter", function() {
+  
+      videoContainer.addEventListener("mousemove", function(dets) {
+         gsap.to("#cursr", {
+          x:dets.x -1250,
+          y:dets.y ,
+          overflow:"hidden",
+          
     })
+
+    
+})
+  })
+   videoContainer.addEventListener("mouseleave", function() {
+
+    
+         gsap.to("#cursr", {
+          x:"70%",
+          y:"-18%",
+          
+          
+    })
+
+    
+
   })
 
   function sheryAnumation(){

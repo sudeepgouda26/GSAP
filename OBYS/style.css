@@ -227,6 +227,7 @@ html, body {
     padding-top: 10vw;
     position: relative;
     z-index: -99;
+    margin-bottom: 25vw;
 
 }
 #page2 #video-container{
@@ -309,7 +310,7 @@ background-color: #FFA63D;
 
 #image-div-container{
   
-    padding:7vw 2vw;
+    padding:7vw 6vw;
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -361,6 +362,7 @@ background-color: #FFA63D;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     /* margin-top: 20vw;
     margin-left: 8vw; */
 
@@ -404,6 +406,16 @@ background-color: #FFA63D;
     transition: all 0.5s ease;
     transition-delay: 0.4s;
 }
+.image-circle2:hover .circle1-hover {
+    scale: 1;
+    transition: all 0.5s ease;
+}
+.image-circle2:hover p {
+    scale: 1;
+    transition: all 0.5s ease;
+    transition-delay: 0.4s;
+}
+
 
 
 

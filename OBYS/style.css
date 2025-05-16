@@ -286,6 +286,7 @@ background-color: #FFA63D;
     width: 100vw;
    
     padding-top: 19vh;
+    margin-bottom: 20vw;
 }
 
 #page3 h1{
@@ -352,6 +353,20 @@ background-color: #FFA63D;
 
     height: 82vh;
     margin-left: 1vw;
+  
+}
+#image-div-container .image-div:nth-last-child(2){
+    width: 28vw;
+
+    height: 72vh;
+  margin-left: -5vw;
+  
+}
+#image-div-container .image-div:nth-last-child(1){
+    width: 28vw;
+
+    height: 72vh;
+ margin-left: 33vw;
   
 }
 .image-circle1 {

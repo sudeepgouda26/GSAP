@@ -395,9 +395,6 @@ background-color: #FFA63D;
     justify-content: center;
     align-items: center;
     position: relative;
-    /* margin-top: 20vw;
-    margin-left: 8vw; */
-
 }
 .image-circle2 svg{
     height: 40%;
@@ -424,10 +421,7 @@ background-color: #FFA63D;
     font-size: 1vw;
     font-family: "Plain Light";
     font-weight: 500;
-    scale: 0;
-    
-   
-    
+    scale: 0;      
 }
 .image-circle1:hover .circle1-hover {
     scale: 1;
@@ -448,26 +442,13 @@ background-color: #FFA63D;
     transition-delay: 0.4s;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #page4{
     min-height: 100vh;
     position: relative;
     width: 100vw;
    
     padding-top: 60vh;
+    
 }
 #page4-content{
     width: 70vw;
@@ -533,6 +514,7 @@ background-color: #FFA63D;
 
 }
 #page5{
+    margin-top:6vw; 
    min-height: 100vh;
  
     position: relative;
@@ -564,6 +546,7 @@ background-color: #FFA63D;
 
  }
  #page5 #elem{
+   
   white-space: nowrap;
     
 overflow-x: hidden;
@@ -626,6 +609,7 @@ overflow-x: hidden;
 
 
 #page6{
+    margin-top: 24vw;
     min-height: 100vh;
     width: 100vw;
     position: relative;
